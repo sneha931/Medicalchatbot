@@ -15,9 +15,10 @@ app = Flask(__name__)
 
 
 load_dotenv()
-weaviate_api_key = os.getenv("weaviate_api_key")
+
+weaviate_api_key = os.getenv("WEAVIATE_API_KEY")
 openrouter_api_key = os.getenv("OPENROUTER_API_KEY") 
-weaviate_url = os.getenv("weaviate_url")
+weaviate_url = os.getenv("WEAVIATE_URL")
 
 
 os.environ["WEAVIATE_API_KEY"] = weaviate_api_key
